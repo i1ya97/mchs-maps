@@ -1,8 +1,8 @@
-import { subscribeOn } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, OnChanges } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import fireData  from '../../assets/fire.json';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -35,8 +35,16 @@ export class MapComponent implements OnInit {
         'get',
         'name_ru'
         ]);
+        const data = fireData;
+        console.log(data);
+        data.forEach(bush => {
+          var marker = new mapboxgl.Marker()
+          .setLngLat([bush.xi, bush.yi])
+          .addTo(this.map);
+          console.log(bush);
+        });
     });
-    // this.http.get('http://kaskad.ukmmchs.ru/map/query').subscribe(() =>{});
+    
   };
   
   select(event) {
