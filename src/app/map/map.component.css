@@ -1,0 +1,31 @@
+.navigation-bar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    background-color: darkblue;
+}
+.selectSubstrate {
+    position: absolute;
+    top: 15px;
+    left: 175px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 1;
+}
+.match-parent {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    right: 0;
+  }
+  .select {
+    padding-left: 30px;
+    margin-left: 35px;
+    border: none;
+    margin-top: 8px;
+  }
