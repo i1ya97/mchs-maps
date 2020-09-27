@@ -1,13 +1,30 @@
 <div class="content">
-    <div class="navigation-bar"></div>
+    <div class="logo"><img style="  padding: 20px;" src="../../assets/015.png"></div>
+    <div class="profile blocks"><img src="../../assets/baseline_person_black_18dp.png"></div>
+    <div class="maps blocks"><img src="../../assets/baseline_map_black_18dp.png"></div>
+    <div class="tabs blocks"><img src="../../assets/baseline_insert_chart_black_18dp.png"></div>
+    <div class="navigation-bar" ></div>
+    <div class="fire bottom"><p>Площадь пожара</p></div>
+    <div class="criticalFire bottom"><p>Критическая площадь пожара</p></div>
+    <div class="smoke bottom"><p>Площадь задымления</p></div>
     <div class="selectSubstrate">
+        <img class="substrate" src="../../assets/baseline_filter_none_black_18dp.png">
         <select (change)="select($event)" class="select">
-            <option select value="streets-v11">Города</option>
+            <option select value="streets-v11">Город</option>
             <option value="dark-v10">Темная</option>
-            <option value="outdoors-v11">Леса</option>
+            <option value="outdoors-v11">Лес</option>
             <option value="light-v10">Светлая</option>
             <option value="satellite-v9">Спутник</option>
         </select>
+    </div>
+    <div class="legends">
+        <div class="block"><div style="background-color: #f3dab4;" class="cube"></div><p style="float: left;">Cельскохозяйственые земли</p></div>
+        <div class="block"><div style="background-color: #eeb2ae;" class="cube"></div><p style="float: left;">Населенные пункты</p></div>
+        <div class="block"><div style="background-color: #afefe9;" class="cube"></div><p style="float: left;">Земли промышленности</p></div>
+        <div class="block"><div style="background-color: #afd1b7;" class="cube"></div><p style="float: left;">Особо охраняемых территорий</p></div>
+        <div class="block"><div style="background-color: #c8b9a9;" class="cube"></div><p style="float: left;">Лесной фонд</p></div>
+        <div class="block"><div style="background-color: #e4dbce;" class="cube"></div><p style="float: left;">Водного фонд</p></div>
+        <div class="block"><div style="background-color: #b6aad2;" class="cube"></div><p style="float: left;">Земли запаса</p></div>
     </div>
     <div class="map" id="map" class="match-parent"></div>
 </div>

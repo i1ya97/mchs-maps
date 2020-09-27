@@ -4,17 +4,17 @@
     bottom: 0;
     left: 0;
     width: 100px;
-    background-color: darkblue;
+    background-color: #261E58;
 }
 .selectSubstrate {
-    position: absolute;
-    top: 15px;
-    left: 175px;
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: white;
-    z-index: 1;
+  position: absolute;
+  top: 20px;
+  left: 175px;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: white;
+  z-index: 1;
 }
 .match-parent {
     position: absolute;
@@ -24,8 +24,121 @@
     right: 0;
   }
   .select {
-    padding-left: 30px;
-    margin-left: 35px;
+    margin-left: 73px;
     border: none;
-    margin-top: 8px;
+    margin-top: 11px;
   }
+.fire {
+  position: absolute;
+  border-radius: 20px;
+  z-index: 1;
+  top: 20px;
+  right: 670px;
+  width: 200px;
+  height: 40px;
+  user-select: none;
+  cursor: pointer;
+  background-color: white;
+}
+.criticalFire {
+  position: absolute;
+  border-radius: 20px;
+  z-index: 1;
+  top: 20px;
+  right: 350px;
+  width: 300px;
+  height: 40px;
+  user-select: none;
+  cursor: pointer;
+  background-color: white;
+}
+.smoke {
+  position: absolute;
+  border-radius: 20px;
+  z-index: 1;
+  top: 20px;
+  right: 100px;
+  width: 230px;
+  height: 40px;
+  user-select: none;
+  cursor: pointer;
+  background-color: white;
+}
+.logo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+p {
+  text-align: center;
+    padding-bottom: 5px;
+    padding-top: 7px;
+    font-size: 20px;
+    font: sans-serif; 
+}
+img {
+  width: 60px;
+}
+.bottom:hover {
+  background-color: #261E58;
+  color: white;
+}
+.bottom {
+  color: #261E58; 
+}
+
+.substrate {
+  width: 32px;
+    height: 32px;
+    position: absolute;
+    padding: 5px;
+    left: 20px;
+}
+.blocks {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+    top: 100px;
+    padding: -20px;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+} 
+
+.blocks:hover {
+  background-color: #261E58;
+}
+.maps {
+  top: 200px;
+}
+.profile {
+  top: 100px;
+}
+.tabs {
+  top: 300px;
+}
+.legends {
+  position: absolute;
+  z-index: 1;
+  bottom: 20px;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  right: 30px;
+}
+.block {
+  float: left;
+}
+.cube {
+  width: 30px;
+  height: 20px;
+  float: left;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
